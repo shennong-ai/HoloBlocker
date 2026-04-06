@@ -1,0 +1,8 @@
+HoloBlocker/
+├── README.md                  # 项目主页介绍
+├── LICENSE.txt                # 开源与商业授权协议
+├── app.py                     # Streamlit 交互界面演示
+├── holoblocker_full.py        # 完整版 28 节点核心类
+├── holoblocker_minimal.py     # 100 行极简核心逻辑
+└── benchmarks/                # 👈 新建这个文件夹，放实验和跑分数据
+    └── NMIPEmbodiedAI.ipynb   # 包含延迟测试和十万级 ShenNong 战报的 Notebook
