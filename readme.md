@@ -116,7 +116,21 @@ if \_\_name\_\_ \== "\_\_main\_\_":
 
 ## ---
 
-**🧠 3\. Why HoloBlocker’s Neuro‑Topology Is Superior**
+## ⏱️ 3. Paper Reproducibility & Latency Benchmarks
+
+For researchers and reviewers verifying the performance claims in our *Nature Machine Intelligence* submission, we provide a comprehensive Jupyter Notebook containing our empirical latency tests and real-time streaming audits.
+
+📂 **Location:** [`benchmarks/NMIPEmbodiedAI.ipynb`](benchmarks/NMIPEmbodiedAI.ipynb)
+
+This notebook includes three core experiments:
+1. **Large-Scale Industrial Simulation:** Tests the Laplacian projection and Dirichlet energy computation on a massive graph (12,000 nodes, 280,000 edges).
+2. **Real-World TCM Safety Graph:** Benchmarks the exact 1,947-node / 6,115-edge graph cited in our paper, proving that the purely algorithmic overhead of the topological circuit breaker operates well within the **sub-millisecond (< 1 ms)** regime on a standard CPU.
+3. **On-the-Fly Middleware Audit:** A live, streaming pipeline (O(1) memory complexity) processing over 100,000 records from the ShenNong dataset, demonstrating the framework's ability to intercept edge cases that traditional soft-alignment models (Baseline V6.0) fail to catch.
+
+To run the benchmarks yourself via Google Colab:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shennong-ai/HoloBlocker/blob/main/benchmarks/NMIPEmbodiedAI.ipynb)
+
+**🧠 4\. Why HoloBlocker’s Neuro‑Topology Is Superior**
 
 | Feature | Traditional Guardrails (RLHF, Prompts) | HoloBlocker (Topological Circuit Breaker) |
 | :---- | :---- | :---- |
@@ -128,7 +142,7 @@ if \_\_name\_\_ \== "\_\_main\_\_":
 
 ## ---
 
-**📚 4\. Related Preprints**
+**📚 5\. Related Preprints**
 
 All preprints are authored by the HoloTSH team (Liu, Li, Hu, Ho, Ng et al.).
 
